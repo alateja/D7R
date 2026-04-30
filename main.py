@@ -16,7 +16,7 @@ def get_db():
 
 @app.get("/")
 def welcome():
-    return "welcome to extra class!"
+    return "welcome to my app!!"
 
 @app.post("/register", response_model=schemas.UserResponse)
 def register(user: schemas.UserCreate, db: Session = Depends(get_db)):
